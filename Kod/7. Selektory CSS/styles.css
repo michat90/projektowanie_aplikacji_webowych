@@ -1,0 +1,31 @@
+/** {*/
+/*    border: 3px solid red;
+ selektor uniwersalny*/
+
+/*div {*/
+/*    border: 3px solid red;*/
+/*}  Selektor typu*/
+
+/*.boxes {*/
+/*    border: 3px solid red;*/
+/*}  selektor klasy*/
+
+/*#box-one {*/
+/*    border: 3px solid red;*/
+/*}   Selektor identyfikatora*/
+
+/*#big-box > div {*/
+/*    border: 3px solid red;*/
+/*}  Selektor elementu dziecka*/
+
+/*#big-box div {*/
+/*    border: 3px solid red;*/
+/*} Selektor elementu potomnego*/
+
+/*#box-two + div {*/
+/*    border: 3px solid red;*/
+/*} Selektor elementu sąsiadującego bezpośrednio*/
+
+/*#box-two ~ div {*/
+/*    border: 3px solid red;*/
+/*}  selektor elementu sąsiadującego*/
