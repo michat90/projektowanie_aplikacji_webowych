@@ -9,7 +9,7 @@ div {
 #big-box {
     background-color: orange;
     width: 550px;
-    height: 550px;
+    height: 100%;
 }
 
 #box-two > div {

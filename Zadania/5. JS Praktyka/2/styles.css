@@ -1,0 +1,17 @@
+.buttons {
+    display: flex;
+    flex-direction: row;
+    width: 100px;
+    left: 0px;
+}
+.box {
+    width: 10px;
+    height: 10px;
+}
+
+.col {
+    display: grid;
+    background-color: red;
+    width: 100px;
+    height: 100px;
+}
