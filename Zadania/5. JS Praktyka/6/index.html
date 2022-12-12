@@ -13,16 +13,38 @@
 </head>
 <body>
     <h2>Generator kwadratów</h2>
-    <label class="label" for="row-number">Liczba wierszy: </label>
-    <input id="row-number" type="number"><br>
-    <label class="label" for="column-number">Liczba kolumn: </label>
-    <input id="column-number" type="number"><br>
-    <label class="label" for="color">Wybór koloru</label>
-    <select id="color">
-        <option value="Czerwony">Czerwony</option>
-        <option value="Zielony">Zielony</option>
-        <option value="Niebieski">Niebieski</option>
-    </select>
+    <div>
+        <div class="row">
+            <div class="label">Liczba wierszy:</div>
+            <input id="row-number" type="number">
+        </div>
+        <span id="row-error" hidden></span>
+        <div class="row">
+            <div class="label">Liczba kolumn:</div>
+            <input id="column-number" type="number">
+        </div>
+        <span id="col-error" hidden></span>
+        <div class="row">
+            <div class="label">Wybór koloru:</div>
+            <select id="color">
+                <option value="Czerwony">Czerwony</option>
+                <option value="Zielony">Zielony</option>
+                <option value="Niebieski">Niebieski</option>
+            </select>
+        </div>
+    </div>
+<!--    <label class="label" for="row-number">Liczba wierszy: </label>-->
+<!--    -->
+<!--    <span id="row-error" hidden><br></span>-->
+<!--    <label class="label" for="column-number">Liczba kolumn: </label>-->
+<!--    <input id="column-number" type="number"><br>-->
+<!--    <span id="col-error" hidden><br></span>-->
+<!--    <label class="label" for="color">Wybór koloru</label>-->
+<!--    <select id="color">-->
+<!--        <option value="Czerwony">Czerwony</option>-->
+<!--        <option value="Zielony">Zielony</option>-->
+<!--        <option value="Niebieski">Niebieski</option>-->
+<!--    </select>-->
     <div class="buttons">
         <button id="create">Stwórz</button>
         <button id="clear">Wyczyść</button>

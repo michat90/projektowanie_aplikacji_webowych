@@ -3,6 +3,8 @@ window.onload = function () {
     let colNumber = document.getElementById('column-number');
     let container = document.getElementById('table');
     let color = document.getElementById('color');
+    let rowSpanErr = document.getElementById('row-error')
+    let colSpanErr = document.getElementById('col-error')
 
     document.getElementById('color').addEventListener('change', function () {
         let color = document.getElementById('color');
@@ -11,9 +13,9 @@ window.onload = function () {
     document.getElementById('create').addEventListener('click', function () {
         clearTable()
         if (!ValuesValid(rowNumber)) {
-
+            setErrorText('Liczba wierszy powinna mieć wartość z przedziału 1-10', rowSpanErr)
         }else if(!ValuesValid(colNumber)) {
-
+            setErrorText('Liczba kolumn powinna mieć wartość z przedziału 1-10', colSpanErr)
         }else {
             createGrid()
         }
@@ -55,5 +57,10 @@ window.onload = function () {
             pickedColor = 'green';
         }
         return pickedColor;
+    }
+
+    function setErrorText(msg, element) {
+        element.textContent = msg;
+        element.removeAttribute('hidden');
     }
 };

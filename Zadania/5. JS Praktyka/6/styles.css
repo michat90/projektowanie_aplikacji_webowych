@@ -7,10 +7,18 @@
     margin-top: 10px;
 }
 
+p {
+    width: 120px;
+}
+
 .box {
     width: 20px;
     height: 20px;
     background-color: red;
+}
+span {
+    color: red;
+    font-size: 0.7em;
 }
 
 button {
@@ -18,18 +26,28 @@ button {
 }
 
 input {
-    margin-bottom: 5px;
-    margin-top: 5px;
-    width: 100px;
+    width: 150px;
+    height: 18px;
 }
 
 .label {
-    width: 100px;
-    margin-left: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    height: 30px;
     margin-bottom: 10px;
-    margin-top: 10px;
 }
 
 select {
     width: 100px;
+    height: 18px;
+}
+
+.box {
+    margin-left: 10px;
 }
