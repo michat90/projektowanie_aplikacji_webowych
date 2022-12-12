@@ -15,11 +15,19 @@
 button {
     margin-right: 5px;
 }
-label, input {
+input {
     margin-bottom: 5px;
     margin-top: 5px;
+    width: 100px;
 }
 .labels {
     margin-left: 10px;
 }
-
+.label {
+    width: 100px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+select {
+    width: 100px;
+}

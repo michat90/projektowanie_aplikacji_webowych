@@ -3,14 +3,16 @@ window.onload = function () {
     let colNumber = document.getElementById('column-number');
     console.log(rowNumber)
     console.log(colNumber)
-    let container = document.getElementById('big-box');
+    let container = document.getElementById('table');
 
   document.getElementById('create').addEventListener('click',function (){
-      let element = document.createElement('div');
-      element.classList.add('box');
       for (let i = 1; i <= rowNumber.value ; i++) {
+          let newRow = document.createElement('tr');
+          let row = container.appendChild(newRow);
           for (let j = 1; j <= colNumber.value ; j++) {
-              container.appendChild(element);
+              let column = document.createElement('td');
+              column.classList.add('box')
+              row.appendChild(column)
           }
       }
   })

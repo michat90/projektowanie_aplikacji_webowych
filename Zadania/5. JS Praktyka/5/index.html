@@ -1,0 +1,31 @@
+<!--. 5. Po wybraniu odpowiedniego koloru i wciśnięciu przycisku Stwórz
+ od teraz kwadraty tworzone są w wybranych kolorach.-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <h2>Generator kwadratów</h2>
+    <label class="label" for="row-number">Liczba wierszy: </label>
+    <input id="row-number" type="text"><br>
+    <label class="label" for="column-number">Liczba kolumn: </label>
+    <input id="column-number" type="text"><br>
+    <label class="label" for="color">Wybór koloru</label>
+    <select id="color">
+        <option value="Czerwony">Czerwony</option>
+        <option value="Zielony">Zielony</option>
+        <option value="Niebieski">Niebieski</option>
+    </select>
+    <div class="buttons">
+        <button id="create">Stwórz</button>
+        <button id="clear">Wyczyść</button>
+    </div>
+    <table id="table"></table>
+</body>
+</html>
