@@ -7,10 +7,6 @@
     margin-top: 10px;
 }
 
-p {
-    width: 120px;
-}
-
 .box {
     width: 20px;
     height: 20px;
@@ -18,7 +14,8 @@ p {
 }
 span {
     color: red;
-    font-size: 0.7em;
+    font-size: 0.8em;
+    margin-left: 10px;
 }
 
 button {
@@ -40,12 +37,14 @@ input {
     flex-direction: row;
     width: 300px;
     height: 30px;
-    margin-bottom: 10px;
+    margin-top: 10px;
 }
 
 select {
     width: 100px;
     height: 18px;
+    margin-left: 5px;
+    background-color: lightgray;
 }
 
 .box {

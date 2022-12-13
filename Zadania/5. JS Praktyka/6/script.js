@@ -6,13 +6,13 @@ window.onload = function () {
     let rowSpanErr = document.getElementById('row-error')
     let colSpanErr = document.getElementById('col-error')
 
-    document.getElementById('color').addEventListener('change', function () {
-        let color = document.getElementById('color');
-    })
 
     document.getElementById('create').addEventListener('click', function () {
         clearTable()
-        if (!ValuesValid(rowNumber)) {
+        if (!ValuesValid(rowNumber) && !ValuesValid(colNumber)) {
+            setErrorText('Liczba wierszy powinna mieć wartość z przedziału 1-10', rowSpanErr)
+            setErrorText('Liczba kolumn powinna mieć wartość z przedziału 1-10', colSpanErr)
+        }else if (!ValuesValid(rowNumber)) {
             setErrorText('Liczba wierszy powinna mieć wartość z przedziału 1-10', rowSpanErr)
         }else if(!ValuesValid(colNumber)) {
             setErrorText('Liczba kolumn powinna mieć wartość z przedziału 1-10', colSpanErr)
